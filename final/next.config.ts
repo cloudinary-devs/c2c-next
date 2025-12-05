@@ -6,6 +6,9 @@ const nextConfig: NextConfig = {
       bodySizeLimit: '10mb',
     },
   },
+  outputFileTracingIncludes: {
+    '/**': ['./products/products.json'],
+  },
 };
 
 export default nextConfig;
