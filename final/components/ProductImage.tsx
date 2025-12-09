@@ -18,6 +18,8 @@ export default function ProductImage({
       alt={`Product: ${publicId}`}
       width={width}
       height={height}
+      format="auto"
+      quality="auto"
       crop={{
         type: 'fill',
         source: true,
