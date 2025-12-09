@@ -10,9 +10,9 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "cloudinary": "^2.7.0",
+    "cloudinary": "^2.8.0",
     "next": "16.0.8",
-    "next-cloudinary": "^6.16.0",
+    "next-cloudinary": "^6.17.5",
     "react": "19.1.0",
     "react-dom": "19.1.0"
   },
