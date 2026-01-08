@@ -15,12 +15,12 @@ A modern, full-stack e-commerce application for a baseball cap store built with 
 
 ## 🛠️ Tech Stack
 
-- **Framework**: Next.js 15.5.4 (App Router)
+- **Framework**: Next.js 16+ (App Router)
 - **Language**: TypeScript 5
 - **Styling**: Tailwind CSS 4
 - **Image Management**: Cloudinary & next-cloudinary
 - **Deployment**: Netlify
-- **Runtime**: React 19.1.0
+- **Runtime**: React 19+
 
 ## 📋 Prerequisites
 
@@ -28,28 +28,24 @@ A modern, full-stack e-commerce application for a baseball cap store built with 
 - npm or yarn
 - Cloudinary account (free tier works)
 - Netlify account (for deployment)
+- CodeSandbox account (if you want to try a sandbox rather than a local build)
 
-## 🔧 Installation
+## 🔧 Local installation
 
 1. **Clone the repository**
    ```bash
    git clone <repository-url>
-   cd course-1-media-literacy-for-devs-1
+   cd start
    ```
 
-2. **Navigate to the final directory**
-   ```bash
-   cd final
-   ```
-
-3. **Install dependencies**
+2. **Install dependencies**
    ```bash
    npm install
    ```
 
-4. **Set up environment variables**
+3. **Set up environment variables**
 
-   Create a `.env.local` file in the `final` directory with the following variables:
+   To run the final version of this app, create a `.env.local` file in the `final` directory with the following variables:
 
    ```env
    NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME=your_cloud_name
@@ -58,20 +54,7 @@ A modern, full-stack e-commerce application for a baseball cap store built with 
    NEXT_PUBLIC_CLOUDINARY_UPLOAD_PRESET=baseball-cap-store
    NEXT_PUBLIC_CLOUDINARY_FOLDER_NAME=baseball-cap-store
    ```
-
-   > **Note**: The upload preset and folder name must be set to `baseball-cap-store` as required by the initialization script.
-
-5. **Initialize Cloudinary assets**
-
-   Upload the logo to your Cloudinary account:
-   ```bash
-   npm run init
-   ```
-
-   This script will:
-   - Validate your environment variables
-   - Upload the logo from `logo/logo.png` to Cloudinary
-   - Set it up as a watermark overlay
+   Then, follow step 2 above.
 
 ## 🏃 Running the Project
 
@@ -159,7 +142,6 @@ This project demonstrates several Cloudinary capabilities:
 - `npm run dev` - Start development server with Turbopack
 - `npm run build` - Build for production with Turbopack
 - `npm run start` - Start production server
-- `npm run init` - Upload logo to Cloudinary (requires `.env.local`)
 - `npm run lint` - Run ESLint
 
 ## 🔍 Key Files
@@ -203,9 +185,9 @@ The `products.json` file is configured to be included in the build via `next.con
 
 ## 📄 License
 
-This project is part of a course on media literacy for developers.
+This project is part of our 'Cloud to Crowd' course on media literacy for developers.
 
 ---
 
-Built with ❤️ using Next.js and Cloudinary
+Built with ❤️ using Next.js by the Cloudinary Developer Relations Team
 
