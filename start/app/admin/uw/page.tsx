@@ -1,8 +1,7 @@
 'use client';
 import { useState } from 'react';
 import Link from 'next/link';
-
-import { CldUploadWidget } from 'next-cloudinary';
+//import { CldUploadWidget } from 'next-cloudinary';
 
 export default function UW() {
   const [isOpen, setIsOpen] = useState(false);

@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import { CldUploadWidget } from 'next-cloudinary';
 
 export default function Admin() {
   return (

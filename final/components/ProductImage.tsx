@@ -14,7 +14,7 @@ export default function ProductImage({
 }) {
   return (
     <CldImage
-      src={`${process.env.NEXT_PUBLIC_CLOUDINARY_FOLDER_NAME}/${publicId}`}
+      src={`${publicId}`}
       alt={`Product: ${publicId}`}
       width={width}
       height={height}
@@ -25,7 +25,7 @@ export default function ProductImage({
       }}
       overlays={[
         {
-          publicId: `${process.env.NEXT_PUBLIC_CLOUDINARY_FOLDER_NAME}/capital-caps-logo`,
+          publicId: `capital-caps-logo`,
           width: 300,
           position: {
             x: 0,
